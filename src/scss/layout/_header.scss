@@ -1,5 +1,12 @@
 .header {
   background-color: $color-menu;
   display: inline-block;
-  padding: 9px;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+
+  .toggle {
+    width: auto;
+    padding: 15px 14px 15px 14px;
+  }
 }
