@@ -1,0 +1,60 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $color-light;
+    font-family: $font-secondary;
+    font-weight: normal;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 55px;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 100px;
+      line-height: 132px;
+    }
+  }
+  p {
+    color: $color-light;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  p::first-letter {
+    text-transform: capitalize;
+  }
+  span {
+    display: block;
+  }
+  &__buttom {
+    width: 45px;
+    height: 45px;
+    background-color: $color-light;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    img {
+      width: 20px;
+      height: 11.7px;
+    }
+    a {
+      padding: 10px;
+    }
+  }
+}
