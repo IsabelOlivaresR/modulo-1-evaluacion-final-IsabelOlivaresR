@@ -1,0 +1,79 @@
+.section2 {
+  background-color: $color-secondary;
+  padding: 30px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  @media all and (min-width: 1200px) {
+    padding: 30px 85px 30px 85px;
+  }
+  h2 {
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+    grid-column: span 3;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+  }
+  .article1,
+  .article2,
+  .article3 {
+    grid-column: span 3;
+    @media all and (min-width: 768px) {
+      grid-column: span 1;
+    }
+  }
+  article {
+    text-align: center;
+    padding: 0 53px 0 53px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      padding: 0 17.85px 0 17.85px;
+    }
+
+    h3 {
+      font-family: $font-secondary;
+      font-size: 18px;
+      line-height: 30px;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+  }
+  h3::first-letter {
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      padding: 0;
+    }
+  }
+  &__button {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-tertiary;
+    color: $color-light;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
+    @media all and (min-width: 768px) {
+      width: 210px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      line-height: 45px;
+      text-align: center;
+      display: block;
+    }
+  }
+}
