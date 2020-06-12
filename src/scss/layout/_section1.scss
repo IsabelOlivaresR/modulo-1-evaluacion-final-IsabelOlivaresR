@@ -1,0 +1,55 @@
+.section1 {
+  padding: 30px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 60px 275px 60px 275px;
+  }
+  span {
+    font-size: 14px;
+    color: $color-title;
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  h2 {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-size: 18px;
+    color: $color-paragraph;
+    line-height: 30px;
+    text-align: justify;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &__buttom {
+    width: 76px;
+    height: 45px;
+    border: 2px solid $color-tertiary;
+    border-radius: 22.5px;
+    margin-top: 30px;
+    a {
+      display: block;
+      color: $color-tertiary;
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}
