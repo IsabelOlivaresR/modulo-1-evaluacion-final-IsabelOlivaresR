@@ -6,7 +6,7 @@
   @media all and (min-width: 1200px) {
     padding: 30px 85px 30px 85px;
   }
-  h2 {
+  &__name {
     font-family: $font-secondary;
     font-size: 24px;
     line-height: 30px;
@@ -16,9 +16,9 @@
     @media all and (min-width: 768px) {
       font-size: 26px;
       line-height: 45px;
-      @media all and (min-width: 1200px) {
-        font-size: 32px;
-      }
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
     }
   }
   .article1,
@@ -29,14 +29,14 @@
       grid-column: span 1;
     }
   }
-  article {
+  .article {
     text-align: center;
     padding: 0 53px 0 53px;
     @media all and (min-width: 768px) {
       padding: 0 17.85px 0 17.85px;
     }
 
-    h3 {
+    &__title {
       font-family: $font-secondary;
       font-size: 18px;
       line-height: 30px;
@@ -44,19 +44,20 @@
         font-size: 24px;
       }
     }
-  }
-  h3::first-letter {
-    text-transform: capitalize;
-  }
-  p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 45px;
-    @media all and (min-width: 768px) {
-      font-size: 20px;
-      padding: 0;
+    &__title::first-letter {
+      text-transform: capitalize;
+    }
+    &__info {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 45px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+        padding: 0;
+      }
     }
   }
+
   &__button {
     width: 184px;
     height: 45px;
@@ -71,6 +72,9 @@
     transition: background-color ease 0.5s;
     @media all and (min-width: 768px) {
       width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 255px;
     }
     &:hover {
       background-color: $color-primary;

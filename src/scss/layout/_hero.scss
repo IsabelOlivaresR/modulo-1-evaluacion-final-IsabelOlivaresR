@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  h1 {
+  &__title {
     color: $color-light;
     font-family: $font-secondary;
     font-weight: normal;
@@ -25,19 +25,19 @@
       font-size: 100px;
       line-height: 132px;
     }
+    span {
+      display: block;
+    }
   }
-  p {
+  &__claim {
     color: $color-light;
     text-align: center;
     @media all and (min-width: 768px) {
       font-size: 24px;
     }
   }
-  p::first-letter {
+  &__claim::first-letter {
     text-transform: capitalize;
-  }
-  span {
-    display: block;
   }
   &__buttom {
     width: 45px;
