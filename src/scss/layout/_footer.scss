@@ -43,7 +43,15 @@
     position: relative;
     transform: translate(0, -50%);
     margin: auto;
+    .icon__arrow {
+      &:hover {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+      }
+    }
   }
+
   &__menu {
     margin-bottom: 30px;
     a {
@@ -65,4 +73,15 @@
 .fa-heart {
   color: $color-tertiary;
   font-size: 10px;
+}
+
+/*ANIMATION*/
+
+@keyframes rotate {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

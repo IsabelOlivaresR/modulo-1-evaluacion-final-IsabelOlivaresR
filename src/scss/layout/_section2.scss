@@ -68,10 +68,13 @@
     align-self: center;
     justify-self: center;
     margin-bottom: 30px;
+    transition: background-color ease 0.5s;
     @media all and (min-width: 768px) {
       width: 210px;
     }
-
+    &:hover {
+      background-color: $color-primary;
+    }
     a {
       line-height: 45px;
       text-align: center;
