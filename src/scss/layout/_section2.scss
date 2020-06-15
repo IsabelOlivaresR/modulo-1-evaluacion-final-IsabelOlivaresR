@@ -8,17 +8,17 @@
   }
   &__name {
     font-family: $font-secondary;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     text-align: center;
     margin-bottom: 45px;
     grid-column: span 3;
     @media all and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 45px;
+      font-size: 1.625rem;
+      line-height: 2.813rem;
     }
     @media all and (min-width: 1200px) {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
   .article1,
@@ -38,21 +38,21 @@
 
     &__title {
       font-family: $font-secondary;
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 1.125rem;
+      line-height: 1.875rem;
       @media all and (min-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
     }
     &__title::first-letter {
       text-transform: capitalize;
     }
     &__info {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 1.125rem;
+      line-height: 1.875rem;
       margin-bottom: 45px;
       @media all and (min-width: 768px) {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 0;
       }
     }
@@ -80,7 +80,8 @@
       background-color: $color-primary;
     }
     a {
-      line-height: 45px;
+      font-size: 1.25rem;
+      line-height: 2.5rem;
       text-align: center;
       display: block;
     }

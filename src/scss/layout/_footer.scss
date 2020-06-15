@@ -1,6 +1,26 @@
 .footer {
   background-color: $color-primary;
 
+  &__buttom {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(0, -50%);
+    margin: auto;
+    .icon__arrow {
+      &:hover {
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -27,28 +47,8 @@
     &__year,
     .claim {
       display: block;
-      font-size: 14px;
-      line-height: 30px;
-    }
-  }
-
-  &__buttom {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translate(0, -50%);
-    margin: auto;
-    .icon__arrow {
-      &:hover {
-        animation-name: rotate;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-      }
+      font-size: 0.875rem;
+      line-height: 1.875rem;
     }
   }
 
@@ -57,7 +57,7 @@
     a {
       text-transform: uppercase;
       color: $color-light;
-      line-height: 30px;
+      line-height: 1.875rem;
     }
   }
   &__social-media {
@@ -65,14 +65,14 @@
     a {
       text-transform: uppercase;
       color: $color-light;
-      line-height: 30px;
+      line-height: 1.875rem;
     }
   }
 }
 
 .fa-heart {
   color: $color-tertiary;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 /*ANIMATION*/

@@ -7,35 +7,35 @@
     padding: 60px 275px 60px 275px;
   }
   .category {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $color-title;
     @media all and (min-width: 1200px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
   &__title {
     font-family: $font-secondary;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     text-transform: capitalize;
     margin-bottom: 15px;
     @media all and (min-width: 768px) {
-      font-size: 26px;
-      line-height: 45px;
+      font-size: 1.625rem;
+      line-height: 2.813rem;
     }
     @media all and (min-width: 1200px) {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
   &__info {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: $color-paragraph;
     line-height: 30px;
     text-align: justify;
     @media all and (min-width: 768px) {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
     }
   }
   &__buttom {
@@ -55,8 +55,8 @@
     a {
       display: block;
       color: $color-tertiary;
-      font-size: 20px;
-      line-height: 40px;
+      font-size: 1.25rem;
+      line-height: 2.5rem;
       text-align: center;
     }
     &:hover {
